@@ -1,7 +1,7 @@
 <template>
   <Form @submit="submitContact" :validation-schema="contactFormSchema">
     <div class="form-group">
-      <label for="name">Tfn</label>
+      <label for="name">Tên</label>
       <Field
         name="name"
         type="text"
@@ -21,7 +21,7 @@
       <ErrorMessage name="email" class="error-feedback" />
     </div>
     <div class="form-group">
-      <label for="address">Địa chi</label>
+      <label for="address">Địa chỉ</label>
       <Field
         name="address"
         type="text"
@@ -103,8 +103,6 @@ export default {
     });
 
     return {
-      // Chúng ta sẽ không muốn hiệu chỉnh props, nên tạo biến cục bộ
-      // contactLocal để liên kết với các input trên form
       contactLocal: this.contact,
       contactFormSchema,
     };
@@ -121,8 +119,6 @@ export default {
         "You have unsaved changes! Do you want to leave?"
       );
       if (!reply) {
-        // stay on the page if
-        // user clicks 'Cancel'
         return false;
       } else {
         this.$router.push({ name: "contactbook" });
