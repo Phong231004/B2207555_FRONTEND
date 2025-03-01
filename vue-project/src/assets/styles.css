@@ -12,48 +12,38 @@ body {
     padding: 20px;
 }
 
-/* Navbar Styles */
-.navbar {
+/* AppHeader Styles */
+.app-header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-.navbar-brand {
+.app-header h1 {
+    margin: 0;
     font-size: 24px;
-    font-weight: bold;
 }
 
-.navbar-nav {
-    display: flex;
-    gap: 20px;
+/* InputSearch Styles */
+.input-search {
+    margin-bottom: 20px;
 }
 
-.nav-item {
-    list-style: none;
+.input-search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.nav-link i {
-    margin-left: 5px;
-}
-
-/* Contact List Styles */
+/* ContactList Styles */
 .contact-list {
     background-color: white;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 }
 
 .contact-list h2 {
@@ -70,18 +60,13 @@ body {
 .contact-list li {
     padding: 10px;
     border-bottom: 1px solid #eee;
-    cursor: pointer;
 }
 
 .contact-list li:last-child {
     border-bottom: none;
 }
 
-.contact-list li:hover {
-    background-color: #f9f9f9;
-}
-
-/* Contact Card Styles */
+/* ContactCard Styles */
 .contact-card {
     background-color: white;
     padding: 20px;
@@ -96,39 +81,20 @@ body {
     color: #333;
 }
 
-.contact-card p {
-    margin: 5px 0;
-}
-
-.contact-card strong {
+.contact-card label {
+    display: block;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-.contact-card i.fa-check {
-    color: green;
-}
-
-.contact-card i.fa-times {
-    color: red;
-}
-
-/* Input Search Styles */
-.input-search {
-    margin-bottom: 20px;
-}
-
-.input-search input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.contact-card p {
+    margin: 5px 0;
 }
 
 /* Button Styles */
 .button-group {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
